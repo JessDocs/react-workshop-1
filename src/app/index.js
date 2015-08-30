@@ -10,15 +10,11 @@ const App = React.createClass({
         dispatch: PropTypes.func
     },
 
-    componentDidMount () {
-        const { dispatch } = this.props
-        dispatch(initApp())
-    },
-
     render () {
         return (
             <div>
                 Hello World!
+                <RouteHandler/>
             </div>
         )
     }
